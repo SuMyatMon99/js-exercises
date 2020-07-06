@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator with switch case</title>
+        <script>
+            function switchcaseFunction(){
+                var num1=parseInt(document.getElementById("fnum").value);
+                var num2=parseInt(document.getElementById("snum").value);
+                var j=document.getElementById("cal").value;
+                var result=" ";
+                switch (j) {
+                    case "plus" : result+=num1+num2;
+                        break;
+                    case "minus" : result+=num1-num2;
+                        break;
+                    case "mul" : result+=num1*num2;
+                        break;
+                    case "div" : result+=num1/num2;
+                        break;    
+                    default:
+                        break;
+                }
+                document.getElementById("para").innerHTML=result;
+            }
+                
+        </script>
+    </head>
+    <body>
+        <label>Enter first number:</label>
+        <input type="text" id="fnum"><br><br>
+        <label>Enter second number:</label>
+        <input type="text" id="snum"><br><br>
+        <select id="cal">
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+            <option value="mul">*</option>
+            <option value="div">/</option>
+        </select>
+        <button type="button" onclick="switchcaseFunction()">Calculate</button>
+        <p>The result is :<span id="para"></span> </p>
+    </body>
+</html>

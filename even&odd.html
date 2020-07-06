@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Even and Odd number</title>
+        <link rel="stylesheet" type="text/css" href="even&odd.css">
+        <script>
+            function findFunction(){
+                var num1=parseInt(document.getElementById("fnum").value);
+                var num2=parseInt(document.getElementById("lnum").value);
+
+                var i;
+                for(i=num1; i<=num2; i++) {
+                    if(i%2==0){
+                        document.getElementById("evenNum").innerHTML+=parseInt(i) + " ";
+                    }
+                else{
+                    document.getElementById("oddNum").innerHTML+=parseInt(i) + " ";
+                    }
+                }
+            } 
+        </script>
+    </head>
+    <body>
+        <style>
+            .even{
+                color: green;
+            }
+            .odd{
+                color: red;
+            }
+        </style>
+        <label>Enter first number:</label><br>
+        <input type="text" id="fnum"><br><br>
+        <label>Enter last number:</label><br>
+        <input type="text" id="lnum"><br><br>
+        <input type="button" onclick="findFunction()" value="Find"><br>
+        <p>Even numbers: <span class="even" id="evenNum"></p>
+        <p>Odd numbers: <span class="odd" id="oddNum"></p>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Divide</title>
+        <script>
+            function divFunction(){
+                var num1=parseInt(document.getElementById("fnum").value);
+                var num2=parseInt(document.getElementById("snum").value);
+            
+                var i;
+            
+                for(i=num1; i<=num2; i++)
+                {
+                    if(i%2==0 && i%5==0){
+                        document.getElementById("para").innerHTML+=i + " ";
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label>Enter first number:</label><br>
+        <input type="text" id="fnum"><br>
+        <label>Enter second number:</label><br>
+        <input type="text" id="snum"><br><br>
+        <button type="button" onclick="divFunction()">Find</button>
+        <p id="para"></p>
+        
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator for two values with buttons</title>
+        <script>
+            function addFunction(){
+                var num1=parseInt(document.getElementById("fnum").value);
+                var num2=parseInt(document.getElementById("snum").value);
+                var result=0;
+                result+=num1+num2;
+                //alert(result);
+                document.getElementById("para").innerHTML=result;
+            }
+
+            function subFunction(){
+                var num1=parseInt(document.getElementById("fnum").value);
+                var num2=parseInt(document.getElementById("snum").value);
+                var result=0;
+                result+=num1-num2;
+                // alert(result);
+                document.getElementById("para").innerHTML=result;
+            }
+            function multiFunction(){
+                var num1=parseInt(document.getElementById("fnum").value);
+                var num2=parseInt(document.getElementById("snum").value);
+                var result=0;
+                result+=num1*num2;
+                //alert(result);
+                document.getElementById("para").innerHTML=result;
+            }
+            function divFunction(){
+                var num1=parseInt(document.getElementById("fnum").value);
+                var num2=parseInt(document.getElementById("snum").value);
+                var result=0;
+                result+=num1/num2;
+                //alert(result);
+                document.getElementById("para").innerHTML=result;
+            }
+        </script>
+    </head>
+    <body>
+        <label>Enter first number:</label>
+        <input type="text" id="fnum"><br><br>
+        <label>Enter second number:</label>
+        <input type="text" id="snum"><br><br>
+        <button type="button" onclick="addFunction()">+</button>
+        <button type="button" onclick="subFunction()">-</button>
+        <button type="button" onclick="multiFunction()">*</button>
+        <button type="button" onclick="divFunction()">/</button>
+        <p id="para"></p>
+    </body>
+</html>
