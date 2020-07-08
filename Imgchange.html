@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Chaning</title>
+    <script>
+        function showImg(image){
+            var expandImage = document.getElementById("expandImg");
+            expandImage.src = image.src;     
+        }
+    
+    </script>
+    </head>
+    <body>
+        <style>
+            #expandImg{
+                width: 50%;
+                height: 50%;
+                margin-top: 5px;
+            }
+        </style>
+
+        <img src="stone.jpg" alt="Stone" width="200" height="200" onmouseover="showImg(this)">
+        <img src="green.jpg" alt="Green" width="200" height="200" onmouseover="showImg(this)">
+        <img src="street.jpg" alt="Street" width="200" height="200" onmouseover="showImg(this)">
+        <img src="red.jpg" alt="Red" width="200" height="200" onmouseover="showImg(this)">
+        <img src="moon.jpg" alt="Moon" width="200" height="200" onmouseover="showImg(this)">
+        <img id="expandImg">
+        
+    </body>
+</html>
