@@ -1,0 +1,29 @@
+.main {
+    width: 50%;
+    height: 600px;
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-color: rgba(203, 219, 190, 0.52);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+#address{
+    border: 1px solid blueviolet;
+}
+.rads{
+    border-color: blueviolet;
+}
+
+table, tr, th, td{
+    border: 1px solid blueviolet;
+    border-collapse: collapse; 
+}
+thead{
+    background-color: black;
+}
+th{
+    color: white;
+}
+
