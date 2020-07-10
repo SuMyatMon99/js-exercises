@@ -27,8 +27,8 @@
            
             function btnAdd(){
                 var taskArr=[];
-                var name=$("#task").val();
-                taskArr.push(name);
+                var task=$("#task").val();
+                taskArr.push(task);
                 taskArr.forEach(function(i,j){
                 $("#tasklist").append('<li>' + i+ '<i class="fa fa-times-circle" style="font-size:25px;color:red; float: right" onclick="Remove('+j+',this)">' + '</li>');
                 });
